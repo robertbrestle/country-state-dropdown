@@ -30,8 +30,6 @@ function populateState(countryId, stateId){
 		return;
 	}
 	
-	select.options[0] = new Option('Select State / Province','');
-	
 	for (var i = 0; i < states[selectedCountry].length; i++) {
 		select.options[select.length] = new Option(Object.keys(states[selectedCountry][i]).pop(), Object.values(states[selectedCountry][i]).pop());
 	}

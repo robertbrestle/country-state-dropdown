@@ -10,7 +10,7 @@
 	<script src="country-state-dropdown.js"></script>
 	<script>
 		populateCountry('country');
-		document.getElementById('country').addEventListener("click", function() { populateState('country','state'); });
+		document.getElementById('country').addEventListener("change", function() { populateState('country','state'); });
 	</script>
 </body>
 </html>
